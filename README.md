@@ -1,26 +1,41 @@
-# 1️⃣ Desafio Classificador de nível de Herói
+# Classificador de nível de herói
 
-**O Que deve ser utilizado**
+Exercício de lógica em JavaScript que percorre uma lista de heróis e classifica cada personagem pela quantidade de experiência (XP).
 
-- Variáveis
-- Operadores
-- Laços de repetição
-- Estruturas de decisões
+## 🚀 Executar
 
-## Objetivo
+Requisito: Node.js instalado. Não há dependências externas.
 
-Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
+```bash
+git clone https://github.com/daviddevdias/hero-level-classifier.git
+cd hero-level-classifier
+node desafioDosHerois.js
+```
 
-Se XP for menor do que 1.000 = Ferro <br>
-Se XP for entre 1.001 e 2.000 = Bronze <br>
-Se XP for entre 2.001 e 5.000 = Prata <br>
-Se XP for entre 5.001 e 7.000 = Ouro <br>
-Se XP for entre 7.001 e 8.000 = Platina <br>
-Se XP for entre 8.001 e 9.000 = Ascendente <br>
-Se XP for entre 9.001 e 10.000= Imortal <br>
-Se XP for maior ou igual a 10.001 = Radiante <br>
+## Regras implementadas
 
-## Saída
+- Menor que 1.000: Ferro.
+- 1.000 a 2.000: Bronze.
+- 2.001 a 5.000: Prata.
+- 5.001 a 7.000: Ouro.
+- 7.001 a 8.000: Platina.
+- 8.001 a 9.000: Ascendente.
+- 9.001 a 10.000: Imortal.
+- Acima de 10.000: Radiante.
 
-Ao final deve se exibir uma mensagem:
-"O Herói de nome **{nome}** está no nível de **{nivel}**"
+Os intervalos descrevem os valores inteiros usados no exercício. A lista e os valores ficam em `desafioDosHerois.js`; não há entrada interativa nem validação de XP.
+
+## Exemplo de saída
+
+```text
+O Herói de nome Goku está no nível de Platina
+```
+
+## 📁 Arquivos
+
+- `desafioDosHerois.js`: classificador com arrays, objetos, laço e condicionais.
+- `preçodaGasolina.js`: exercício adicional de cálculo, independente do classificador.
+
+## 📌 Próximos passos
+
+Extrair a classificação para uma função, validar valores de entrada e testar os limites de cada faixa.
